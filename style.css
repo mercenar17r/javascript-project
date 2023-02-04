@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 .cart {
   background-color: #fff;
@@ -35,4 +36,14 @@ body {
   right: -10px;
   padding: 3px;
   border-radius: 3px;
+}
+/* shop items style */
+.shop {
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+}
+
+.item {
+  border: 2px solid #212529;
+  border-radius: 4px;
 }
