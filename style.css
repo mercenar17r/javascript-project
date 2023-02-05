@@ -41,6 +41,8 @@ body {
 .shop {
   display: grid;
   grid-template-columns: repeat(4, 223px);
+  gap: 32px;
+  justify-content: center;
 }
 
 .item {
