@@ -31,28 +31,30 @@ let shopItemsData = [
 ];
 
 let generateShop = () => {
-  return (shop.innerHTML = shopItemsData.map((item) => {
-    return `
-    <div class="item">
-    <img src="images/img-1.jpg" width="220" alt="" />
+  return (shop.innerHTML = shopItemsData
+    .map((item) => {
+      let { id, name, price, desc, img } = item;
+      return `
+    <div id=product-id-${id} class="item">
+    <img src=${img} width="220" alt="" />
     <div class="details">
-      <h3>Casual Shirt</h3>
+      <h3>${name}</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Accusantium!
+       ${desc}
       </p>
       <div class="price-quantity">
-        <h2>$ 35</h2>
+        <h2>$${price}</h2>
         <div class="buttons">
           <i class="bi bi-dash-lg"></i>
-          <div class="quantity">0</div>
+          <div id=${id} class="quantity">0</div>
           <i class="bi bi-plus-lg"></i>
         </div>
       </div>
     </div>
   </div>
       `;
-  })).join();
+    })
+    .join(""));
 };
 
 generateShop();
