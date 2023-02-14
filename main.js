@@ -1,41 +1,4 @@
 let shop = document.getElementById("shop");
-let shopItemsData = [
-  {
-    id: "dfggdgdg",
-    name: "Casual Shirt",
-    price: 45,
-    desc: "  Lorem ipsum dolor sit amet consectetur, adipisicing elit ",
-    img: "images/img-1.jpg",
-  },
-  {
-    id: "dfgdhfhds",
-    name: "Office Shirt",
-    price: 35,
-    desc: "  Lorem ipsum dolor sit amet consectetur, adipisicing elit ",
-    img: "images/img-2.jpg",
-  },
-  {
-    id: "dgdgdhfjhse",
-    name: "T Shirt",
-    price: 33,
-    desc: "  Lorem ipsum dolor sit amet consectetur, adipisicing elit ",
-    img: "images/img-3.jpg",
-  },
-  {
-    id: "yuifgfdf",
-    name: "Mens Suit",
-    price: 65,
-    desc: "  Lorem ipsum dolor sit amet consectetur, adipisicing elit ",
-    img: "images/img-4.jpg",
-  },
-];
-
-let basket = [
-  {
-    id: "sdfdgd",
-    item: 1,
-  },
-];
 
 let generateShop = () => {
   return (shop.innerHTML = shopItemsData
@@ -68,10 +31,8 @@ generateShop();
 
 let increment = (id) => {
   let selectedItem = id;
-  console.log(selectedItem.id);
 };
 let decrement = (id) => {
   let selectedItem = id;
-  console.log(selectedItem.id);
 };
 let update = () => {};
