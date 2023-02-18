@@ -38,4 +38,8 @@ let increment = (id) => {
 let decrement = (id) => {
   let selectedItem = id;
 };
-let update = () => {};
+let update = (id) => {
+  let search = basket.find((x) => x.id === id);
+
+  document.getElementById(id).innerHTML = search.item;
+};
